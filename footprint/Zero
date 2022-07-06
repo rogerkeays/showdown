@@ -1,0 +1,11 @@
+#!/usr/bin/env java_launcher
+
+public class Zero {
+  public static void main(String [] args) {
+    System.out.println(One.get());
+  }
+}
+
+class One {
+  static int get() { return 1; }
+}
