@@ -2,8 +2,6 @@
 
 import java.io.File
 
-val home = "/home/guybrush"
-val journals = "$home/journal/history"
 val seen = HashSet<String>()
 
 fun scrub(str: String): String { 
@@ -31,7 +29,7 @@ fun catdup(filename: String) = File(filename).forEachLine {
 } 
 
 fun main(args: Array<String>) {
-  File(journals).listFiles()
+  File("/path/to/logs").listFiles()
      .filter { it.name.endsWith(".log") }
      .forEach { it.forEachLine { seen.add(scrub(it)) } }
   args.forEach { catuniq(it) }

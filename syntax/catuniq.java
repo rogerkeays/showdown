@@ -7,7 +7,7 @@ import static jamaica.unchecked.*;
 
 public class catuniq {
 
-final static String journal = "/home/guybrush/journal/history";
+final static String journal = "/path/to/logs";
 final static Set<String> seen = new HashSet<>();
 
 static String scrub(String in) { 
