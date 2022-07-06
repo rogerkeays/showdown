@@ -4,16 +4,16 @@ In search of a robust, productive programming language.
 
 ## requirements
 
-robust: static typing, stable apis, experienced developers
-stable: mature, future-proof, backwards compatible, standardised, widely deployed, open-source, funded
-efficient: close to native speed, light on memory, multithreaded
-interactive: repl support, automatic compilation, live coding
-scripting: single file apps, vim-friendly, fast startup
-ecosystem: package manager, large package library, active community
-portable: console, desktop, web, mobile, embedded, any os
-distribution: easy to share and install packages and binaries
-syntax: readable syntax, point-free syntax, infix syntax
-api: clean api, clean semantics, less ooo
+- robust: static typing, stable apis, experienced developers
+- stable: mature, future-proof, backwards compatible, standardised, widely deployed, open-source, funded
+- efficient: close to native speed, light on memory, multithreaded
+- interactive: repl support, automatic compilation, live coding
+- scripting: single file apps, vim-friendly, fast startup
+- ecosystem: package manager, large package library, active community
+- portable: console, desktop, web, mobile, embedded, any os
+- distribution: easy to share and install packages and binaries
+- syntax: readable syntax, point-free syntax, infix syntax
+- api: clean api, clean semantics, less ooo
 
 ## language comparisons
 
