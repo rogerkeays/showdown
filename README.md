@@ -74,6 +74,7 @@ script start-up times
     0.033 $ time python -c0
     0.020 $ time sbcl --noinform --eval 0 --quit
     0.016 $ time csi -e 0
+    0.014 $ time rust-script zero.rs
     0.013 $ time ./graal-zero // native-image
     0.010 $ time awk "BEGIN { 0 }"
     0.008 $ time ksh -c ''
@@ -101,10 +102,12 @@ memory footprint
       7628 kB $ /usr/bin/time --format "%M kB" csi-4.13 -e 0
       6908 kB $ /usr/bin/time --format "%M kB" ./graal-zero // native-image
       6576 kB $ /usr/bin/time --format "%M kB" python-2.7.16 -c0
+      4784 kB $ /usr/bin/time --format "%M kB" rust-script zero.rs
       3760 kB $ /usr/bin/time --format "%M kB" awk "BEGIN { 0 }"
       3508 kB $ /usr/bin/time --format "%M kB" ksh -c ''
       3008 kB $ /usr/bin/time --format "%M kB" bash -c ''
       2172 kB $ /usr/bin/time --format "%M kB" ./zero.kexe // kotlin-1.7.0 native
       1920 kB $ /usr/bin/time --format "%M kB" bc <<< '0'
+      1768 kB $ /usr/bin/time --format "%M kB" ./zero-rust // precompiled
       1420 kB $ /usr/bin/time --format "%M kB" dash -c ''
 
